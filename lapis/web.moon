@@ -1,7 +1,6 @@
 lapis = require "lapis"
 db = require "lapis.db"
 import Model from require "lapis.db.model"
-import config from require "lapis.config"
 import insert from table
 import sort from table
 import random from math
@@ -12,7 +11,7 @@ class World extends Model
 
 class Benchmark extends lapis.Application
   "/": =>
-    json: {message: "Hello, World!"}
+    json: { message: "Hello, World!" }
 
   "/db": =>
     num_queries = tonumber(@params.queries) or 1

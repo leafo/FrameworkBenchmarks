@@ -1,1 +1,2 @@
-lapis.serve(require("web"))
+lapis = require "lapis"
+lapis.serve require "web"

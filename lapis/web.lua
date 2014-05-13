@@ -5,11 +5,6 @@ do
   local _obj_0 = require("lapis.db.model")
   Model = _obj_0.Model
 end
-local config
-do
-  local _obj_0 = require("lapis.config")
-  config = _obj_0.config
-end
 local insert
 do
   local _obj_0 = table
